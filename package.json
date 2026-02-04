@@ -11,8 +11,7 @@
     "dev:web": "npm --workspace @agendo/web run dev",
     "dev:all": "concurrently \"ollama serve\" \"npm run dev:api\" \"npm run dev:web\"",
     "prisma:gen": "prisma generate --schema apps/api/prisma/schema.prisma",
-    "prisma:migrate": "prisma migrate dev -n init --schema apps/api/prisma/schema.prisma",
-    "postinstall": "npm --workspace @agendo/api exec prisma generate"
+    "prisma:migrate": "prisma migrate dev -n init --schema apps/api/prisma/schema.prisma"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
